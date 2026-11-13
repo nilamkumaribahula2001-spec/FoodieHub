@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub | Order Confirmed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 FoodieHub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="orders.html">My Orders</a>
+        </nav>
+    </header>
+
+    <section class="confirmation-container" id="order-confirmation">
+
+        <div class="success-icon">✓</div>
+
+        <h1>Order Placed Successfully!</h1>
+        <p class="success-message">
+            Thank you for ordering with FoodieHub.
+            Your delicious food is on its way!
+        </p>
+
+        <div class="confirmation-card">
+
+            <h2>Order Details</h2>
+
+            <p>Order ID: <strong id="order-id"></strong></p>
+            <p>Customer Name: <strong id="confirm-name"></strong></p>
+            <p>Phone: <strong id="confirm-phone"></strong></p>
+            <p>Address: <strong id="confirm-address"></strong></p>
+            <p>Payment Method: <strong id="confirm-payment"></strong></p>
+
+            <div class="ordered-items">
+                <h3>Your Items</h3>
+                <div id="confirm-items"></div>
+            </div>
+
+            <div class="confirmation-total">
+                Total Amount: ₹<strong id="confirm-total"></strong>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="order-btn">
+            Continue Shopping
+        </a>
+
+        <p class="footer-message">❤️ Good Food. Good Mood.</p>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

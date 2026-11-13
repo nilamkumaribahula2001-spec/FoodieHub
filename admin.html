@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub | Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍔 FoodieHub Admin</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="orders.html">My Orders</a>
+    </nav>
+</header>
+
+<section class="admin-page">
+
+    <div class="orders-heading">
+        <span class="orders-tag">ADMIN DASHBOARD</span>
+        <h2>Manage Orders ❤️</h2>
+        <p>Manage customer orders and delivery status.</p>
+    </div>
+
+    <div class="orders-content">
+        <div class="orders-title">
+            <h3>All Customer Orders</h3>
+        </div>
+<div class="admin-dashboard">
+
+    <div class="dashboard-box total-box">
+        <h3>Total Orders</h3>
+        <p id="total-orders">0</p>
+    </div>
+
+    <div class="dashboard-box pending-box">
+        <h3>Pending Orders</h3>
+        <p id="pending-orders">0</p>
+    </div>
+
+    <div class="dashboard-box delivered-box">
+        <h3>Delivered Orders</h3>
+        <p id="delivered-orders">0</p>
+    </div>
+<div class="dashboard-box confirmed-box">
+    <h3>Confirmed Orders</h3>
+    <p id="confirmed-orders">0</p>
+</div>
+<div class="dashboard-box revenue-box">
+    <h3>Total Revenue</h3>
+    <p id="total-revenue">₹0</p>
+</div>
+<div class="dashboard-box today-sales-box">
+    <h3>Today's Sales</h3>
+    <p id="today-sales">₹0</p>
+</div>
+
+<div class="dashboard-box monthly-sales-box">
+    <h3>Monthly Sales</h3>
+    <p id="monthly-sales">₹0</p>
+</div>
+</div>
+<button id="export-sales-btn">📥 Export Sales Report</button>
+<h2 class="recent-orders-heading">Recent Orders</h2>
+<div class="admin-search">
+    <input
+        type="text"
+        id="order-search"
+        placeholder="🔍 Search by Order ID or Customer Name..."
+    >
+</div>
+        <div id="admin-order-list"></div>
+    </div>
+
+</section>
+
+<script src="admin.js"></script>
+
+</body>
+</html>

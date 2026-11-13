@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍔 FoodieHub</h1>
+    <p>Good Food. Good Mood. Delivered Fresh!</p>   
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+     <div class="search-box">
+    <input type="text" id="foodSearch" placeholder="🔍 Search your favourite food...">
+</div>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="orders.html">My Orders</a>
+    <a href="profile.html">👤 Profile</a>
+</nav>
+<!-- SPECIAL OFFER BANNER -->
+<section class="offer-banner">
+    <div class="offer-content">
+        <span class="offer-label">🔥 TODAY'S SPECIAL OFFER</span>
+        <h2>Get 20% OFF on Your First Order!</h2>
+        <p>Fresh food, delicious taste and exciting savings.</p>
+        <a href="#menu" class="offer-btn">Order Now →</a>
+    </div>
+
+    <div class="offer-emoji">🍕 🍔 🍟</div>
+</section>
+<section class="hero-3d">
+
+    <div class="hero-content">
+        <span class="hero-tag">🍕 Fresh & Delicious</span>
+
+        <h2>
+            Delicious Food,<br>
+            <span>Delivered To You!</span>
+        </h2>
+
+        <p>
+            Order your favourite food online
+            and enjoy every bite at home!
+        </p>
+
+        <a href="#menu" class="hero-order-btn">
+            🍔 Order Now →
+        </a>
+
+        <div class="hero-features">
+            <span>🚀 Fast Delivery</span>
+            <span>🥗 Fresh Food</span>
+            <span>❤️ Best Taste</span>
+        </div>
+    </div>
+
+   <div class="hero-image">
+    <div class="chef-scene">
+
+        <div class="hero-circle"></div>
+
+        <div class="chef-badge">
+            👨‍🍳
+            <span>Made with Love!</span>
+        </div>
+
+        <div class="hero-burger">
+            🍔
+        </div>
+
+        <div class="hero-pizza">🍕</div>
+        <div class="hero-fries">🍟</div>
+        <div class="hero-drink">🥤</div>
+
+        <div class="floating-star star-one">✦</div>
+        <div class="floating-star star-two">✦</div>
+        <div class="floating-star star-three">✧</div>
+
+    </div>
+
+
+</div>
+</section>
+
+<section id="menu">
+    <h2>Explore Our Delicious Menu 🍽️</h2>
+    <p class="subtitle">Freshly prepared, just for you!</p>
+<div class="category-filter">
+    <button onclick="filterCategory('all')">All</button>
+    <button onclick="filterCategory('biryani')">🍛 Biryani</button>
+    <button onclick="filterCategory('pizza')">🍕 Pizza</button>
+    <button onclick="filterCategory('burger')">🍔 Burger</button>
+    <button onclick="filterCategory('momos')">🥟 Momos</button>
+    <button onclick="filterCategory('dessert')">🍰 Desserts</button>
+    <button onclick="filterCategory('drinks')">🥤 Soft Drinks</button>
+</div>
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500" alt="Chicken Biryani">
+            <h3>🍗 Chicken Biryani</h3>
+            <p>Kolkata special biryani</p>
+            <p>₹249</p>
+             <button onclick="addToCart('Chicken Biryani', 249)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2018/07/Vegetable-Dum-Biryani-recipe.jpg" alt="Veg Biryani">
+            <h3>🍛 Veg Biryani</h3>
+            <p>Delicious vegetable biryani</p>
+            <p>₹179</p>
+             <button onclick="addToCart('Veg Biryani', 179)">Add to Cart</button>
+        </div>
+ <!-- Egg Biryani -->
+<div class="food-card">
+    <img src="https://mughaldarbarbelur.in/wp-content/uploads/2025/08/Egg-Biriyani-2-Pcs-Egg-Alu.jpeg" alt="Egg Biryani">
+    <h3>🍛 Egg Biryani</h3>
+    <p>Delicious biryani with boiled eggs and spices</p>
+    <p>₹179</p>
+    <button onclick="addToCart('Egg Biryani', 179)">Add to Cart</button>
+</div>
+
+<!-- Mutton Biryani -->
+<div class="food-card">
+    <img src="https://www.foodiaq.com/wp-content/uploads/2025/05/Mutton-biryani.jpg" alt="Mutton Biryani">
+    <h3>🍛 Mutton Biryani</h3>
+    <p>Delicious aromatic biryani with tender mutton</p>
+    <p>₹299</p>
+    <button onclick="addToCart('Mutton Biryani', 299)">Add to Cart</button>
+</div>
+
+<!-- Hyderabadi Biryani -->
+<div class="food-card">
+    <img src="https://b.zmtcdn.com/data/pictures/chains/0/22769190/1781408728afddfecd-0aab-4756-8132-a28c17a4c8a9.png" alt="Hyderabadi Biryani">
+    <h3>🍛 Hyderabadi Biryani</h3>
+    <p>Authentic Hyderabadi biryani with rich spices</p>
+    <p>₹249</p>
+    <button onclick="addToCart('Hyderabadi Biryani', 249)">Add to Cart</button>
+</div>
+
+<!-- Paneer Biryani -->
+<div class="food-card">
+    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto/FOOD_CATALOG/IMAGES/CMS/2026/1/2/34c3537c-6af4-4410-92f2-1f02ce07bd14_20e69b63-c354-466a-8eaf-faac394c35ac.jpg_compressed" alt="Paneer Biryani">
+    <h3>🍛 Paneer Biryani</h3>
+    <p>Delicious paneer biryani with aromatic spices</p>
+    <p>₹199</p>
+    <button onclick="addToCart('Paneer Biryani', 199)">Add to Cart</button>
+</div>
+        <div class="food-card">
+            
+             <img src="https://www.mygingergarlickitchen.com/wp-content/uploads/2024/02/veg-momos-recipe-5.jpg" alt="Veg Momos">   
+            <h3>🥟 Veg Momos</h3>
+            <p>Steamed spicy momos</p>
+            <p>₹99</p>
+             <button onclick="addToCart('Veg Momos', 99)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9?w=500" alt="Chicken Momos">
+            <h3>🥟 Chicken Momos</h3>
+            <p>Juicy chicken dumplings</p>
+            <p>₹139</p>
+             <button onclick="addToCart('Chicken Momos', 139)">Add to Cart</button>
+        </div>
+<!-- Fried Momos -->
+<div class="food-card">
+    <img src="https://getdaytoday.com/public/uploads/all/yg1l5VqMfjm01LKEmjB2SojQ4SdcSu20PkYmC42B.jpg" alt="Fried Momos">
+    <h3>🥟 Fried Momos</h3>
+    <p>Crispy golden fried momos</p>
+    <p>₹119</p>
+    <button onclick="addToCart('Fried Momos', 119)">Add to Cart</button>
+</div>
+
+<!-- Tandoori Momos -->
+<div class="food-card">
+    <img src="https://www.shutterstock.com/shutterstock/photos/2227090941/display_1500/stock-photo-tandoori-momo-veg-or-non-veg-in-red-and-cream-sauce-served-with-sauce-nepal-and-tibet-recipe-2227090941.jpg" alt="Tandoori Momos">
+    <h3>🥟 Tandoori Momos</h3>
+    <p>Spicy smoky tandoori momos</p>
+    <p>₹149</p>
+    <button onclick="addToCart('Tandoori Momos', 149)">Add to Cart</button>
+</div>
+
+<!-- Paneer Momos -->
+<div class="food-card">
+    <img src="https://vadilalglobal.com/cdn/shop/files/PaneerMomos.jpg?v=1762838175&width=1946" alt="Paneer Momos">
+    <h3>🥟 Paneer Momos</h3>
+    <p>Soft momos filled with paneer</p>
+    <p>₹129</p>
+    <button onclick="addToCart('Paneer Momos', 129)">Add to Cart</button>
+</div>
+
+<!-- Chicken Cheese Momos -->
+<div class="food-card">
+    <img src="https://cdn.prod.website-files.com/686b30f5c61aff0be71c5315/68c926b63432c6dd41580b0f_Meat%20and%20Eat%20Images.png" alt="Chicken Cheese Momos">
+    <h3>🥟 Chicken Cheese Momos</h3>
+    <p>Juicy chicken with melted cheese</p>
+    <p>₹169</p>
+    <button onclick="addToCart('Chicken Cheese Momos', 169)">Add to Cart</button>
+</div>
+        <div class="food-card">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy2Lw-9YzcnWKjMGGHZINdlmUDOSOQXMOSeVb4BcXLAA&s=10" alt="Egg Roll">
+            <h3>🌯 Egg Roll</h3>
+            <p>Kolkata special egg roll</p>
+            <p>₹70</p>
+            <button onclick="addToCart('Egg Roll', 70)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbqsSjbzoNdJXhp0xSwmNPfa7J8ONsrKm673qQrzNCEQ&s=10" alt="Chicken Roll">
+            <h3>🌯 Chicken Roll</h3>
+            <p>Spicy chicken kathi roll</p>
+            <p>₹130</p>
+            <button onclick="addToCart('Chicken Roll', 130)">Add to Cart</button>  
+        </div>
+
+        <div class="food-card">
+             <img src="https://tarissa.in/cdn/shop/files/71LRnkK4aSL._AC_SL1500.jpg?v=1715783286" alt="Ice Cream">
+            <h3>🍦 Ice Cream</h3>
+            <p>Delicious vanilla ice cream</p>
+            <p>₹89</p>
+             <button onclick="addToCart('Ice Cream', 89)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://myminichefs.com/wp-content/uploads/2025/12/Cheese-Pizza-23-scaled.jpg" alt="Cheese Pizza">
+            <h3>🍕 Cheese Pizza</h3>
+            <p>Loaded cheese pizza</p>
+            <p>₹199</p>
+             <button onclick="addToCart('Cheese Pizza', 199)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://media.istockphoto.com/id/2158592905/photo/beef-patty-burger-with-vegetables-and-lettuce-on-white-background-file-contains-clipping-path.jpg?s=612x612&w=0&k=20&c=1mUN5sPZh5A2SRhAqs3tFrFW9cHhA4REkuUTp1h_9lI=" alt="Cheese Burger">
+            <h3>🍔 Cheese Burger</h3>
+            <p>Fresh crispy burger</p>
+            <p>₹129</p>
+             <button onclick="addToCart('Cheese Burger', 129)">Add to Cart</button>
+        </div>
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Classic Veg Burger">
+    <h3>🍔 Classic Veg Burger</h3>
+    <p>Fresh vegetable patty burger</p>
+    <p>₹99</p>
+    <button onclick="addToCart('Classic Veg Burger', 99)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+    <img src="https://vendor.buysab.com/uploads/4e45e0f188aec35f739b6105d5f8ff4f.jpg" alt="Aloo Tikki Burger">
+    <h3>🍔 Aloo Tikki Burger</h3>
+    <p>Crispy potato tikki burger</p>
+    <p>₹89</p>
+    <button onclick="addToCart('Aloo Tikki Burger', 89)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=500" alt="Cheese Burst Burger">
+    <h3>🍔 Cheese Burst Burger</h3>
+    <p>Loaded with delicious melted cheese</p>
+    <p>₹159</p>
+    <button onclick="addToCart('Cheese Burst Burger', 159)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500" alt="Double Patty Burger">
+    <h3>🍔 Double Patty Burger</h3>
+    <p>Double patty with fresh toppings</p>
+    <p>₹189</p>
+    <button onclick="addToCart('Double Patty Burger', 189)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=500" alt="Chicken Burger">
+    <h3>🍔 Chicken Burger</h3>
+    <p>Juicy crispy chicken burger</p>
+    <p>₹179</p>
+    <button onclick="addToCart('Chicken Burger', 179)">Add to Cart</button>
+</div>
+        <div class="food-card">
+             <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=500" alt="French Fries">
+            <h3>🍟 French Fries</h3>
+            <p>Golden crispy fries</p>
+            <p>₹99</p>
+             <button onclick="addToCart('French Fries', 99)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.jpg" alt="Hakka Noodles">
+            <h3>🍜 Hakka Noodles</h3>
+            <p>Chinese spicy noodles</p>
+            <p>₹149</p>
+             <button onclick="addToCart('Hakka Noodles', 149)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://www.whiskaffair.com/wp-content/uploads/2021/05/White-Sauce-Paste-2-3.jpg" alt="White Sauce Pasta">
+            <h3>🍝 White Sauce Pasta</h3>
+            <p>Creamy Italian pasta</p>
+            <p>₹179</p>
+             <button onclick="addToCart('White Sauce Pasta', 179)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500" alt="Veg Sandwich">
+            <h3>🥪 Veg Sandwich</h3>
+            <p>Fresh vegetable sandwich</p>
+            <p>₹99</p>
+             <button onclick="addToCart('Veg Sandwich', 99)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Chocolate Cake">
+            <h3>🍰 Chocolate Cake</h3>
+            <p>Rich chocolate dessert</p>
+            <p>₹149</p>
+            <button onclick="addToCart('Chocolate Cake', 149)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="Cold Coffee">
+            <h3>🥤 Cold Coffee</h3>
+            <p>Chilled creamy coffee</p>
+            <p>₹99</p>
+            <button onclick="addToCart('Cold Coffee', 99)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://b.zmtcdn.com/data/dish_photos/e05/5f0d7f9109b45cc95822add844a54e05.jpeg" alt="Paneer Pizza">
+            <h3>🍕 Paneer Pizza</h3>
+            <p>Spicy paneer loaded pizza</p>
+            <p>₹229</p>
+            <button onclick="addToCart('Paneer Pizza', 229)">Add to Cart</button>
+        </div>
+<div class="food-card">
+    <img src="https://www.acouplecooks.com/wp-content/uploads/2022/10/Margherita-Pizza-093.jpg" alt="Margherita Pizza">
+    <h3>🍕 Margherita Pizza</h3>
+    <p>Classic cheese and tomato pizza</p>
+    <p>₹179</p>
+    <button onclick="addToCart('Margherita Pizza', 179)">Add to Cart</button>
+</div>
+
+<div class="food-card">
+    <img src="https://images.dominos.co.in/nextgen-catalog/media/prod/Dominos/HomeProductV1/3856fc49-8159-42f2-82db-89265db08425_FarmhouseCBsideLatest.jpg" alt="Farmhouse Pizza">
+    <h3>🍕 Farmhouse Pizza</h3>
+    <p>Loaded vegetable farmhouse pizza</p>
+    <p>₹249</p>
+    <button onclick="addToCart('Farmhouse Pizza', 249)">Add to Cart</button>
+</div>
+<div class="food-card">
+    <img src="https://b.zmtcdn.com/data/dish_photos/557/8e93479baa8d9a37fb0caf9e3e110557.jpeg" alt="Volcano Pizza">
+    <h3>🌋 Volcano Pizza</h3>
+    <p>Loaded cheese with spicy toppings</p>
+    <p>₹279</p>
+    <button onclick="addToCart('Volcano Pizza', 279)">Add to Cart</button>
+</div>
+<div class="food-card">
+    <img src="https://cdn.dotpe.in/longtail/store-items/7702259/zmb2tBOb.webp" alt="Corn Cheese Pizza">
+    <h3>🍕 Corn Cheese Pizza</h3>
+    <p>Sweet corn and extra cheese pizza</p>
+    <p>₹199</p>
+    <button onclick="addToCart('Corn Cheese Pizza', 199)">Add to Cart</button>
+</div>
+        <div class="food-card">
+             <img src="https://maindish.in/wp-content/uploads/2021/04/Cheese_cornsnack-800x530.png" alt="Spring Roll">
+            <h3>🌮 Spring Roll</h3>
+            <p>Crispy vegetable rolls</p>
+            <p>₹119</p>
+            <button onclick="addToCart('Spring Roll', 119)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+             <img src="https://feelslikehomeblog.com/wp-content/uploads/2024/04/gluten-free-hot-fudge-brownie-sundae-recipe-square-featured.png" alt="Brownie Sundae">
+            <h3>🍨 Brownie Sundae</h3>
+            <p>Chocolate brownie with ice cream</p>
+            <p>₹159</p>
+            <button onclick="addToCart('Brownie Sundae', 159)">Add to Cart</button>
+        </div>
+<!-- Gulab Jamun -->
+<div class="food-card">
+    <img src="https://i0.wp.com/chitrasfoodbook.com/wp-content/uploads/2016/10/gulab-jamun-using-mix.jpg?fit=500%2C641&ssl=1" alt="Gulab Jamun">
+    <h3>🍯 Gulab Jamun</h3>
+    <p>Soft and delicious sweet gulab jamun</p>
+    <p>₹79</p>
+    <button onclick="addToCart('Gulab Jamun', 79)">Add to Cart</button>
+</div>
+
+<!-- Rasmalai -->
+<div class="food-card">
+    <img src="https://eatsbyramya.com/wp-content/uploads/2024/10/rasmalai_can_recipe.jpg" alt="Rasmalai">
+    <h3>🍮 Rasmalai</h3>
+    <p>Soft creamy rasmalai in rich milk</p>
+    <p>₹99</p>
+    <button onclick="addToCart('Rasmalai', 99)">Add to Cart</button>
+</div>
+
+<!-- Boondi Ladoo -->
+<div class="food-card">
+    <img src="http://ashbaber.com/wp-content/uploads/2023/06/Ladoo-on-a-plate-small.jpg" alt="Boondi Ladoo">
+    <h3>🍯 Boondi Ladoo</h3>
+    <p>Traditional sweet boondi ladoo</p>
+    <p>₹89</p>
+    <button onclick="addToCart('Boondi Ladoo', 89)">Add to Cart</button>
+</div>
+<!-- Coca-Cola -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500" alt="Coca-Cola">
+    <h3>🥤 Coca-Cola</h3>
+    <p>Chilled refreshing Coca-Cola</p>
+    <p>₹40</p>
+    <button onclick="addToCart('Coca-Cola', 40)">Add to Cart</button>
+</div>
+
+<!-- Pepsi -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=500" alt="Pepsi">
+    <h3>🥤 Pepsi</h3>
+    <p>Ice-cold refreshing Pepsi</p>
+    <p>₹40</p>
+    <button onclick="addToCart('Pepsi', 40)">Add to Cart</button>
+</div>
+
+<!-- Sprite -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=500" alt="Sprite">
+    <h3>🥤 Sprite</h3>
+    <p>Refreshing lemon-lime drink</p>
+    <p>₹40</p>
+    <button onclick="addToCart('Sprite', 40)">Add to Cart</button>
+</div>
+
+<!-- Fanta -->
+<div class="food-card">
+    <img src="https://images.unsplash.com/photo-1624517452488-04869289c4ca?w=500" alt="Fanta">
+    <h3>🥤 Fanta</h3>
+    <p>Sweet and fizzy orange drink</p>
+    <p>₹40</p>
+    <button onclick="addToCart('Fanta', 40)">Add to Cart</button>
+</div>
+
+<!-- Thums Up -->
+<div class="food-card">
+    <img src="https://cdn.uengage.io/uploads/5/image-665962-1716368916.jpeg" alt="Thums Up">
+    <h3>🥤 Thums Up</h3>
+    <p>Strong and fizzy cola drink</p>
+    <p>₹40</p>
+    <button onclick="addToCart('Thums Up', 40)">Add to Cart</button>
+</div>
+
+<!-- Mountain Dew -->
+<div class="food-card">
+    <img src="https://www.mountaindew.com/prod/s3fs-public/2026-02/Original-Dew-pdp.png" alt="Mountain Dew">
+    <h3>🥤 Mountain Dew</h3>
+    <p>Refreshing citrus-flavoured drink</p>
+    <p>₹40</p>
+    <button onclick="addToCart('Mountain Dew', 40)">Add to Cart</button>
+</div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About FoodieHub ❤️</h2>
+    <p>Delicious food, amazing flavours, and happiness in every bite! ❤️
+    **FoodieHub – Your Cravings, Our Passion! 🍔**
+
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us 📞</h2>
+    <p>Email: support@foodiehub.com</p>
+</section>
+
+<footer>
+    <p>© 2026 FoodieHub. All Rights Reserved.</p>
+    <p>Made with ❤️ for food lovers</p>
+</footer>
+<section id="cart">
+    <h2>🛒 Your Shopping Cart</h2>
+
+    <div id="cart-items">
+        Your cart is empty.
+    </div>
+
+    <h3>Total Amount: ₹<span id="total">0</span></h3>
+</section>
+<section id="checkout">
+    <h2>📦 Checkout</h2>
+
+    <h3>Customer Details</h3>
+
+    <input type="text" id="customerName" placeholder="Enter Your Name">
+
+    <input type="tel" id="customerPhone" placeholder="Enter 10 Digit Mobile Number" maxlength="10">
+
+    <textarea id="customerAddress" placeholder="Enter Your Delivery Address"></textarea>
+
+    <h3>Payment Method</h3>
+
+    <select id="paymentMethod">
+    <option value="Cash on Delivery">Cash on Delivery</option>
+    <option value="Online Payment">Online Payment</option>
+</select>
+
+    <h3>Order Total: ₹<span id="checkout-total">0</span></h3>
+
+    <button onclick="placeOrder()">Place Order</button>
+</section>
+<section id="order-confirmation" style="display: none;">
+
+    <h2>🎉 Order Placed Successfully!</h2>
+
+    <p>Order ID: <span id="order-id"></span></p>
+
+    <p>Customer Name: <span id="confirm-name"></span></p>
+
+    <p>Mobile Number: <span id="confirm-phone"></span></p>
+
+    <p>Delivery Address: <span id="confirm-address"></span></p>
+
+    <h3>Ordered Food Items</h3>
+    <div id="confirm-items"></div>
+
+    <h3>Total Amount: ₹<span id="confirm-total"></span></h3>
+
+    <p>Payment Method: <span id="confirm-payment"></span></p>
+
+</section>
+<section id="order-history">
+    <h2>My Order History</h2>
+
+    <div id="order-history-list">
+        <p>Loading orders...</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+<!-- BACK TO TOP BUTTON -->
+<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑
+</button>
+</body>
+</html>
+
+

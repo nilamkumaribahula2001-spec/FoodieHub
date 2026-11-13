@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub | My Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍔 FoodieHub</h1>
+    <p>Your Shopping Cart</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#menu">Menu</a>
+    <a href="cart.html">🛒 Cart</a>
+    <a href="orders.html">My Orders</a>
+</nav>
+
+<section id="cart" class="cart-page">
+    <div class="cart-heading">
+    <h2>Your Cart</h2>
+    <p>Review your delicious choices before checkout.</p>
+</div>
+
+    <div class="cart-layout">
+    <div class="cart-items-box">
+        <div id="cart-items">
+            Your cart is empty.
+        </div>
+    </div>
+
+
+    <div class="cart-summary">
+    <h3>Order Summary</h3>
+
+    <div class="summary-row">
+        <span>Subtotal</span>
+        <span>₹<span id="total">0</span></span>
+    </div>
+
+    <div class="summary-row">
+        <span>Delivery</span>
+        <span>Free</span>
+    </div>
+
+    <hr>
+
+    <a href="checkout.html" class="order-btn">
+        Proceed to Checkout →
+    </a>
+
+    <a href="index.html#menu" class="continue-shopping">
+        ← Continue Shopping
+    </a>
+</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

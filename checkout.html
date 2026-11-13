@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub | Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍔 FoodieHub</h1>
+    <p>Complete Your Order</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#menu">Menu</a>
+    <a href="cart.html">🛒 Cart</a>
+</nav>
+
+<section id="checkout">
+    <h2>📦 Checkout</h2>
+
+    <h3>Customer Details</h3>
+
+    <input type="text" id="customerName" placeholder="Enter Your Name">
+
+    <input type="tel" id="customerPhone" placeholder="Enter 10 Digit Mobile Number" maxlength="10">
+
+    <textarea id="customerAddress" placeholder="Enter Your Delivery Address"></textarea>
+
+    <h3>Payment Method</h3>
+
+    <select id="paymentMethod">
+        <option value="Cash on Delivery">Cash on Delivery</option>
+        <option value="Online Payment">Online Payment</option>
+    </select>
+
+    <h3>Order Total: ₹<span id="checkout-total">0</span></h3>
+
+    <button onclick="placeOrder()">Place Order</button>
+</section>
+
+<section id="order-confirmation" style="display: none;">
+    <h2>🎉 Order Placed Successfully!</h2>
+
+    <p>Order ID: <span id="order-id"></span></p>
+    <p>Customer Name: <span id="confirm-name"></span></p>
+    <p>Mobile Number: <span id="confirm-phone"></span></p>
+    <p>Delivery Address: <span id="confirm-address"></span></p>
+
+    <h3>Ordered Food Items</h3>
+    <div id="confirm-items"></div>
+
+    <h3>Total Amount: ₹<span id="confirm-total"></span></h3>
+    <p>Payment Method: <span id="confirm-payment"></span></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Reviews - FoodieHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⭐ FoodieHub Reviews</h1>
+        <p>Share your experience with us!</p>
+    </header>
+
+    <section class="review-container">
+        <h2>Write a Review</h2>
+
+        <form id="reviewForm">
+            <label>Food Name</label>
+            <input type="text" id="foodName"
+                placeholder="Enter food name" required>
+
+            <label>Your Name</label>
+            <input type="text" id="customerName"
+                placeholder="Enter your name" required>
+
+            <label>Rating</label>
+            <select id="rating" required>
+                <option value="">Select rating</option>
+                <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                <option value="3">⭐⭐⭐ - Good</option>
+                <option value="2">⭐⭐ - Average</option>
+                <option value="1">⭐ - Poor</option>
+            </select>
+
+            <label>Your Review</label>
+            <textarea id="review"
+                placeholder="Write your experience..."
+                required></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+<section class="all-reviews">
+    <h2>Customer Reviews ⭐</h2>
+    <div id="reviewsList">
+        Loading reviews...
+    </div>
+</section>
+    <script src="reviews.js"></script>
+</body>
+</html>
